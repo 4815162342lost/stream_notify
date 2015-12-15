@@ -28,7 +28,7 @@ def check_online(streamer_name,pb, index):
     elif (data[stream_id]['status'])=="Dead":
         online[index]=0 
 
-streamers_file=open("/home/vodka/.config/stream_notify/config")
+streamers_file=open(os.path.expanduser("~/.config/stream_notify/config"))
 mystreamers=[]
 online=[]
 logo=[]
